@@ -19,7 +19,7 @@ fs.readFile('client_secret.json', function processClientSecrets(err, content) {
   // Authorize a client with the loaded credentials, then call the YouTube API.
 
   authorize(JSON.parse(content), getChannel);
-  
+
   setInterval(() => {
     authorize(JSON.parse(content), getChannel);
   }, 10000);
@@ -111,7 +111,7 @@ function getChannel(auth) {
   service.search.list({
     auth: auth,
     part: 'snippet',
-    maxResults: "25",
+    maxResults: process.argv.slice(2)[1],
     q: process.argv.slice(2)[0]
   }, function(err, response) {
     if (err) {

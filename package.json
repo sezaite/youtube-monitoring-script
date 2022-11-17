@@ -9,7 +9,7 @@
   },
   "devDependencies": {},
   "scripts": {
-    "test": "node app.js \"keyworod\""
+    "test": "node app.js \"funny videos\" \"25\""
   },
   "repository": {
     "type": "git",

@@ -1,0 +1,24 @@
+{
+  "name": "youtube-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "google-auth-library": "^8.7.0",
+    "googleapis": "^109.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "node app.js \"keyworod\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sezaite/youtube-monitoring-script.git"
+  },
+  "author": "Martyna Sezaite",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sezaite/youtube-monitoring-script/issues"
+  },
+  "homepage": "https://github.com/sezaite/youtube-monitoring-script#readme"
+}
